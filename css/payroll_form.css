@@ -43,3 +43,65 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.form-content {
+    min-height: calc(100% - 80px);
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.form {
+    width: 65%;
+    padding: 44px 50px;
+    background: white;
+    box-shadow: 0px 3px 6px grey;
+    border: 1px solid white;
+    opacity: 1;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.form-head {
+    font: normal normal bold 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0 px solid green;
+    flex-flow: wrap;
+}
+
+.label {
+    width: 20%;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.text {
+    font-size: 8px;
+    color: black;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.input {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
