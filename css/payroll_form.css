@@ -105,3 +105,21 @@ label {
     border-radius: 4px;
     resize: vertical;
 }
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 24px;
+    margin-left: 12px;
+    border-radius: 5px;
+}
