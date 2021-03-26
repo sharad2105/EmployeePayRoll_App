@@ -123,3 +123,12 @@ label {
     margin-left: 12px;
     border-radius: 5px;
 }
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+#salary {
+    width: 70%;
+}
