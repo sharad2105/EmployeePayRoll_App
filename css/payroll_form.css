@@ -143,3 +143,44 @@ select {
     color: #8f98a1;
     background-color: transparent;
 }
+
+.buttonParent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+button {
+    font-size: 12px;
+    padding: 7px 7px;
+    color: #42515f;
+    background: transparent;
+    font-family: "Roboto";
+    border: none;
+    font-weight: 480;
+    width: 140px;
+    opacity: 1;
+    background-color: #e2e2e2;
+    border: 1px solid #707070;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+.submitButton {
+    border: none;
+    background-color: #f5f5f5;
+    margin-right: 30px;
+}
+
+.cancelButton {
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 857px) {
+    .submitButton {
+        background-color: green;
+        margin-right: 26px;
+    }
+}
