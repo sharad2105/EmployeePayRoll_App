@@ -24,6 +24,11 @@ body {
     width: 80%;
 }
 
+.img {
+    width: 55px;
+    margin: 5px;
+}
+
 .logo-content-img {
     border: solid 0px #42515f;
 }
@@ -176,6 +181,7 @@ button {
 .cancelButton {
     text-decoration: none;
     text-align: center;
+    color: black;
 }
 
 @media screen and (max-width: 857px) {
