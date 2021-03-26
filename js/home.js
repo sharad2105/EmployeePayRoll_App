@@ -1,13 +1,23 @@
+let empPayrollList;
 window.addEventListener("DOMContentLoaded", (event) => {
+    empPayrollList = getEmployeePayrollDataFromStorage();
+    document.querySelector(".emp-count").textContent = empPayrollList.length;
+
     createInnerHtml();
+    localStorage.removeItem("editEmp");
 });
 
+const getEmployeePayrollDataFromStorage = () => {
+    return localStorage.getItem('EmployeePayrollList') ?
+        JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
+}
+
 const createInnerHtml = () => {
+    if (empPayrollList.length == 0) return;
     const headerHtml =
         "<tr><th></th><th>Name</th><th>Gender</th><th>Department</th>" +
         "<th>Salary</th><th>Start Date</th><th>Actions</th></tr>";
     let innerHtml = `${headerHtml} `;
-    let empPayrollList = createEmployeePayrollJSON();
     for (const employeePayrollData of empPayrollList) {
         innerHtml = `${innerHtml}
      <tr>
@@ -41,22 +51,22 @@ const getDeptHtml = (deptList) => {
 
 const createEmployeePayrollJSON = () => {
     let empPayrollListLocal = [{
-            _name: "Sharad Patil",
+            _name: "Shubham Sawant",
             _gender: "Male",
             _department: ["HR", "sales"],
             _salary: "500000",
             _startDate: "21 Sep 2019",
             _id: new Date().getTime(),
-            _profilePic: "../assets/profile-images/Ellipse -5.png",
+            _profilePic: "../assets/profile-images/Ellipse -8.png",
         },
         {
-            _name: "Rahul Bose ",
+            _name: "Hitendra Mali",
             _gender: "Male",
             _department: ["HR", "Finance"],
             _salary: "700000",
             _startDate: "20 Dec 2019",
             _id: new Date().getTime(),
-            _profilePic: "../assets/profile-images/Ellipse -3.png",
+            _profilePic: "../assets/profile-images/Ellipse -7.png",
         },
     ];
     return empPayrollListLocal;

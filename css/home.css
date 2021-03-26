@@ -138,6 +138,17 @@ td {
     opacity: 1;
 }
 
+tr:not(:first-child) {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+td:first-child {
+    display: flex;
+    align-items: center;
+}
+
 td img:first-child {
     margin-right: 10px;
 }
